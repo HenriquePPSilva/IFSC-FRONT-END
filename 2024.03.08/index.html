@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label{
+            text-align: center;
+        }
+        textarea{
+            height: 100px;
+            width: 400px;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+    <title>EmpregaAqui</title>
+</head>
+<body>
+    <h1>EmpregaAqui</h1>
+    <p>Nós da EmpregaAqui somos o que falta a você desempregado! Somos um intermediário e ajudamos você a encontrar seu emprego. Fundada no dia 08 de março de 2024, fundada por Henrique Patricio, tem como missão oferecer e ter um
+        emprego, visto que a taxa de empregabilidade.
+    </p>
+    <p>
+        "O nível médio da ocupação (percentual ocupados na população em idade de trabalhar) também cresceu e chegou a 57,6% em 2023, 1,6 p.p. a mais que em 2022 (56,0%). A estimativa anual do número de empregados com carteira de trabalho assinada cresceu 5,8% no ano e chegou a 37,7 milhões de pessoas, o mais alto da série."
+            -<a href="https://agenciagov.ebc.com.br/noticias/202401/taxa-de-desocupacao-cai-a-7-8-em-2023-menor-patamar-desde-2014" target="_blank">agencia gov</a>
+    </p>
+
+    <h2>Sobre você</h2>
+    <form action="enviarAquivo.php" method="post">
+        <p>
+            <label for="nomeUsuario">Nome:
+                <input type="text" name="campoNome" id="nomeUsuario">
+            </label>
+        </p>
+
+        <ul>
+            Selecione seu sexo:
+            <li>
+                <label for="sexoMasculino">Masculino:
+                    <input type="radio" name="sexo" id="sexoMasculino">
+                </label>
+            </li>
+
+            <li>
+                <label for="sexoFeminino">Feminino:
+                    <input type="radio" name="sexo" id="sexoFeminino">
+                </label>
+            </li>
+
+            <li>
+                <label for="naoDeclarado">Prefiro não dizer:
+                    <input type="radio" name="sexo" id="naoDeclarado">
+                </label>
+            </li>
+        </ul>
+
+        <p>
+            <label for="sobreVoce">Fale um pouco sobre sua história:
+                <textarea name="campoSobre" id="sobreVoce" cols="30" rows="10"></textarea>
+            </label>
+        </p>
+        
+        <p>
+            <label for="dataNascimento">Digite sua data de nascimento:
+                <input type="date" name="campoIdade" id="dataNascimento">
+            </label>
+        </p>
+
+        <p>
+            <label for="emailUsuario">Digite seu melhor email:
+                <input type="email" name="campoEmail" id="emailUsuario">
+            </label>
+        </p>
+
+        <p>
+            <label for="cpfUsuario">Digite seu CPF:
+                <input type="number" max="11" name="campoCpf" id="cpfUsuario">
+            </label>
+        </p>
+        <p>
+            <label for="fotoCpfFrente">Anexe aqui a foto da frente do CPF
+                <br>
+                <input type="file" name="campoFotoCpf" id="fotoCpfFrente">
+            </label>
+        </p>
+        <p>
+            <label for="fotoCpfBack">Anexe aqui a foto da parte de trás do CPF
+                <br>
+                <input type="file" name="campoFotoCpf" id="fotoCpfFrente">
+            </label>
+        </p>
+    </form>
+
+    <h2>Sobre a vaga desejada</h2>
+    <form action="enviarArquivo.php" method="post">
+        <p>
+            Selecione a vaga desejada:
+            <select name="campoVagas" id="vagasUsuario">
+                <optgroup label="Vagas:">
+                    <option value="auxiliarLaboratorio">Auxiliar de Laboratório</option>
+                    <option value="auxiliarEscritorio">Auxiliar de Escritório</option>
+                    <option value="programadorFront">Programador Front-End</option>
+                    <option value="programadorBackEnd">Programador Back-End</option>
+                    <option value="analistaDados">Analista de Dados</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            Selecione o horário desejado:
+            <select name="campoHorarios" id="horarioVagas">
+                <optgroup label="Horários:">
+                    <option value="tarde">13h30 - 17h30</option>
+                    <option value="manha">8h00 - 12h00</option>
+                    <option value="noite">18h30 - 22h30</option>
+                    <option value="integral">7h00 - 17h00</option>
+                    <option value="madrugada">20h00 - 6h00</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="botaoEnviar">
+                <input type="submit" value="Enviar" id="botaoEnviar">
+            </label>
+
+            <label for="botaoRecomeçar">
+                <input type="reset" value="Resetar">
+            </label>
+        </p>
+    </form>
+</body>
+</html>
