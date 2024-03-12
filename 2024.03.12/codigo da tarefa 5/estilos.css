@@ -1,0 +1,52 @@
+h1{
+    font-family: cursive;
+    color: aqua;
+}
+h2{
+   text-align: center;
+   font-size: 3rem;
+
+}
+li{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+}
+p{
+    width: 100%;
+    text-align: center;
+}
+dt{
+    background-color: aqua;
+    width: 400px;
+    line-height: 50px;
+}
+th{
+    background-color: aquamarine;
+    color: red;
+    width: 100px;
+}
+td{
+    color: blueviolet;
+    width: 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+a{
+    color: darkcyan;
+}
+img{
+    width: 400px;
+    height: 300px;
+    border-radius: 50px;
+}
+article{
+    text-align: center;
+}
+.icones{
+    height: 30px;
+    width: 30px;
+}
