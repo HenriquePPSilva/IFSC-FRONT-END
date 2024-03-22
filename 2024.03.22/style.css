@@ -1,0 +1,10 @@
+#container{
+    display: flex;
+}
+#fotos-lazer{
+    flex-wrap: wrap;
+}
+.imagens{
+    width: 200px;
+    height: 200px;
+}
