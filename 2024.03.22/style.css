@@ -1,8 +1,59 @@
 #container{
     display: flex;
 }
+#lista-filme h2:hover{
+    color: blueviolet;
+}
+#lista-filme li{
+    width: 200px;
+}
+#lista-filme li:hover{
+    font-weight: bold;
+    background-color: grey;
+}
+#lista-filme li::after{
+    content: " Eu sou um elemento usando ::after também :)";
+    color: darkblue;
+}
+
+
+
+
 #fotos-lazer{
     flex-wrap: wrap;
+}
+#fotos-lazer h2:hover{
+    color: blueviolet;
+}
+
+#fotos-lazer span::after{
+    content: "Estou usando o ::after para dizer que aqui vai minha legenda!!";
+    text-align: center;
+}
+
+#fotos-lazer img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#fotos-lazer img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+#sites-recomendados h2:hover{
+    color: blueviolet;
+}
+#sites-recomendados li::after{
+    content: " Eu sou um elemento usando ::after :)";
+}
+#sites-recomendados li:hover{
+    font-weight: bold;
+    background-color: aqua;
 }
 .imagens{
     width: 200px;
